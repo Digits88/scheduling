@@ -1,0 +1,51 @@
+tr.calendar-row	{ height: 70px; }
+
+/* Month Name */
+thead.calendar-header th { padding: 5px; }
+thead.calendar-header tr { background: #48ADFF; color: #ffffee; border-left: 3px solid #48ADFF; border-right: 3px solid #48ADFF; }
+
+/* Days Names */
+td.calendar-day-head {  color: #666; font-weight:bold; text-align:center; width: 90px; padding:5px; border-top: 3px solid #fff; }
+td.calendar-day-head:first-child { border-left: 3px solid #fff; }
+td.calendar-day-head:last-child { border-right: 3px solid #fff; }
+
+/* Day number */
+div.day-number { text-align: center; font-weight: bold; color: #888; }
+div.day-number-gone { text-align: center; font-weight: bold; color: #bbb; }
+
+/* Cells */
+td.calendar-day { padding: 5px; border-left: 3px solid #fff; border-right: 3px solid #fff; background: #DBEBFF; border-bottom: 3px solid #fff; border-top: 3px solid #fff; }
+td.calendar-day:hover { background-color: #FFE9F3; cursor: pointer; }
+td.calendar-day-gone, td.calendar-day-np { padding:5px; border-left: 3px solid #fff; border-right: 3px solid #fff; background: #EDF4FF; border-bottom: 3px solid #fff; border-top: 3px solid #fff;  }
+
+/* Selecting and stuff */
+#selectable .ui-selecting { background: #FFE9F3; cursor: pointer; }
+#selectable .ui-selected { background: #99D1FF; color: #444; }
+
+
+/* Calendar Starts */
+/* Time-Sheet Begins */
+
+
+/* Dates */
+th.time-slots-days { padding: 5px; font-size: 12px; }
+thead.time-sheet tr { background: #48ADFF; color: #ffffee; border-left: 3px solid #ECECEC; border-right: 3px solid #ECECEC; }
+
+th.time-slots-time { font-size: 9px; font-weight: normal; text-align: right; vertical-align: top; padding: 0 5px 0px 5px; }
+
+/* Time Slots (Cells) */
+td.time-slot { border-left: 3px solid #ECECEC; border-right: 3px solid #ECECEC; background: #F5FAFF; border-top: 2px solid #ECECEC; height: 15px; }
+td.time-slot:hover, td.time-slot-empty:hover { background-color: #FFE9F3; cursor: pointer; }
+
+/* Half an hour slots */
+td.time-slot-empty { border-left: 3px solid #ECECEC; border-right: 3px solid #ECECEC; background: #F5FAFF; border-top: 2px dotted #ECECEC; height: 15px; }
+
+#time-slots-selectable .ui-selecting { background: #FFE9F3; cursor: pointer; }
+#time-slots-selectable .ui-selected { background: #DBEBFF; border-top-color: #F5F5F5; border-bottom-color: #F5F5F5; }
+
+
+
+
+
+
+
