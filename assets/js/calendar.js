@@ -3,7 +3,7 @@ var email = '';
 var dates = new Array();
 var times = new Array();
 
-$(function () {
+$(function() {
 	$("#selectable").selectable({
 		filter:'.calendar-day', 
 		selected: function (event, ui) {

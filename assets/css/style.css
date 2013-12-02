@@ -6,8 +6,6 @@ html {
 	background-size: cover;
 }
 
-
-
 body { background: transparent url(http://shikshya.org/img/pattern.png) repeat top left; !important; width:100%;height:100%;position:fixed;top:0px;left:0px; }
 
 .content { 
