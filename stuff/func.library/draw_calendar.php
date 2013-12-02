@@ -34,9 +34,15 @@ function draw_calendar($month, $year){
 
 	/* keep going with days.... */
 	for($list_day = 1; $list_day <= $days_in_month; $list_day++):
-		$calendar.= ($list_day >= date('j')) ? "<td class='calendar-day' id='" . $month . '-' . $list_day . "'>" : "<td class='calendar-day-gone'>";
+		if (strlen($list_day) == 2){
+			$gate = $list_day;
+		} else {
+			$gate = '0' . $list_day;
+		}
+		
+		$calendar.= ($list_day >= date('j')) ? "<td class='calendar-day' id='" . $month . '.' . $gate . "'>" : "<td class='calendar-day-gone'>";
 			/* add in the day number */
-			$calendar.= ($list_day >= date('j')) ? '<div class="day-number">'.$list_day.'</div>' : '<div class="day-number-gone">'.$list_day.'</div>';
+			$calendar.= ($list_day >= date('j')) ? '<div class="day-number">'.$gate.'</div>' : '<div class="day-number-gone">'.$gate.'</div>';
 
 			/** QUERY THE DATABASE FOR AN ENTRY FOR THIS DAY !!  IF MATCHES FOUND, PRINT THEM !! **/
 			//$calendar.= str_repeat('<p> </p>',2);

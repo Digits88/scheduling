@@ -1,6 +1,5 @@
 <?php
 	require_once('stuff/func.library/draw_calendar.php');
-	require_once('stuff/func.library/draw_time_sheet.php');	
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +34,7 @@
                 	<form autocomplete="on" id="form-events-info"> 
                                 <p> 
                                     <label for="eventname" class="uname" data-icon="u">Event Name:</label>
-                                    <input id="eventname" name="eventname" required="required" type="text" placeholder="Batman Vs Joker Rap Battle">
+                                    <input id="event-name" name="event-name" required="required" type="text" placeholder="Batman Vs Joker Rap Battle">
                                 </p>
                                 
                                 <p>
@@ -47,6 +46,7 @@
                 
 		</div><!--/.events-info -->
 		<div class="calendar">
+			<div class="msg"></div><!--/.msg -->
 			<?php
 				$date = array(date('n'), date('Y'));
 				echo draw_calendar($date[0], $date[1]);
@@ -54,10 +54,8 @@
 		</div><!--/.calendar -->
 		
 		<div class="time-sheet">
-			<?php
-				draw_time_sheet();	
-			?>
-		</div><!--/.calendar -->
+			
+		</div><!--/.time-sheet -->
 	
 	</div><!--/.row -->
 	<div class="row">
@@ -70,7 +68,7 @@
 	
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-	<script src="./assets/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="./assets/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 	<script src="./assets/js/calendar.js"></script>
 </body>
 </html>
