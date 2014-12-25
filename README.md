@@ -1,4 +1,4 @@
 scheduling
 ==========
 
-Yet another scheduling web-app! Much better though. ;)
+Yet another scheduling web-app! 
